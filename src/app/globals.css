@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #FED835;
+  --secondary: #304fff;
+
+  --primary-accent: #e5c230;
+  --foreground-accent: #454545;
+  --hero-background: #F3F3F5;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply text-lg;
+  
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Madani Arabic Regular", "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Madani Arabic Regular", "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#logos svg {
+  @apply w-fit h-10 sm:h-12;
+}
+
+.benefit-section:last-of-type > div {
+  @apply mb-10;
+}
+
+/* Ajout de la font Madani Arabic Regular */
+@font-face {
+  font-family: 'Madani Arabic Regular';
+  src: url('/fonts/Madani Arabic Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MadaniArabic-Regular';
+  src: url('/fonts/Madani Arabic Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MadaniArabic-SemiBold';
+  src: url('/fonts/Madani Arabic Regular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Apply Madani Arabic to all text elements */
+* {
+  font-family: "Madani Arabic Regular", "Source Sans 3", sans-serif;
+}
